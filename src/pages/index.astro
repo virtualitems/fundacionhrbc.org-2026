@@ -61,12 +61,12 @@ const programs = [
 	<body class="bg-background text-foreground antialiased">
 		<!-- Header -->
 		<header class="fixed left-0 right-0 top-0 z-50 backdrop-blur-xl">
-			<nav class="mx-auto flex w-full max-w-7xl items-center justify-between border-b border-border/20 bg-background/80 px-6 py-4 lg:px-8">
+			<nav class="mx-auto flex w-full max-w-7xl items-center justify-between border-b border-border/20 bg-background/80 px-6 py-4 2xl:px-8">
 				<a href="#hero" class="group flex items-center gap-3">
 					<img src="/icon.jpg" alt="HRBC Logo" class="h-12 w-auto rounded-lg transition-transform duration-300 group-hover:scale-105" />
 					<span class="font-bold uppercase tracking-[0.15em]">Fundación HRBC</span>
 				</a>
-				<div class="hidden items-center gap-2 md:flex">
+				<div class="hidden items-center gap-2 2xl:flex">
 					<a class="px-4 py-2 text-sm font-medium transition hover:text-secondary" href="#nosotros">Nosotros</a>
 					<a class="px-4 py-2 text-sm font-medium transition hover:text-secondary" href="#impacto">Impacto</a>
 					<a class="px-4 py-2 text-sm font-medium transition hover:text-secondary" href="#programas">Programas</a>
@@ -76,19 +76,19 @@ const programs = [
 		</header>
 
 		<!-- Hero -->
-		<section id="hero" class="relative min-h-screen overflow-hidden pt-20">
+		<section id="hero" class="relative overflow-hidden pt-20">
 			<!-- Background gradient -->
 			<div class="pointer-events-none absolute inset-0 -z-10 bg-linear-to-br from-secondary/10 via-background to-accent/5"></div>
-			<div class="pointer-events-none absolute right-0 top-40 -z-10 size-150 rounded-full bg-linear-to-br from-accent/20 to-transparent blur-[100px]"></div>
+			<div class="pointer-events-none absolute right-0 top-40 -z-10 size-80 rounded-full bg-linear-to-br from-accent/20 to-transparent blur-[100px] 2xl:size-150"></div>
 
-			<div class="mx-auto grid min-h-screen w-full max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16 lg:px-8">
-				<div class="flex flex-col gap-10">
+			<div class="mx-auto grid w-full max-w-7xl items-center gap-8 px-6 py-12 2xl:min-h-screen 2xl:grid-cols-[1.2fr_0.8fr] 2xl:gap-16 2xl:px-8 2xl:py-20">
+				<div class="flex flex-col gap-6 2xl:gap-10">
 
 					<div class="space-y-6">
-						<h1 class="font-['Space_Grotesk',sans-serif] text-6xl font-black leading-[1.05] tracking-tight lg:text-8xl">
+						<h1 class="font-['Space_Grotesk',sans-serif] text-4xl font-black leading-[1.05] tracking-tight 2xl:text-8xl">
 							Potenciamos capacidades para una <span class="text-secondary">vida con autonomia</span>
 						</h1>
-						<p class="max-w-2xl text-xl leading-relaxed text-foreground/70 lg:text-2xl">
+						<p class="max-w-2xl text-base leading-relaxed text-foreground/70 2xl:text-2xl">
 							Impulsamos el desarrollo personal y comunitario con programas de inclusion, orientacion y rehabilitacion basada en comunidad.
 						</p>
 					</div>
@@ -104,29 +104,29 @@ const programs = [
 					</div>
 
 					<!-- Stats -->
-					<div class="grid grid-cols-3 gap-6 border-t border-border/30 pt-10">
+					<div class="grid grid-cols-3 gap-4 border-t border-border/30 pt-6 2xl:gap-6 2xl:pt-10">
 						<div>
-							<div class="text-5xl font-black text-secondary">18</div>
-							<div class="mt-2 text-sm font-medium text-foreground/60">Anos de servicio</div>
+							<div class="text-3xl font-black text-secondary 2xl:text-5xl">18</div>
+							<div class="mt-1 text-xs font-medium text-foreground/60 2xl:mt-2 2xl:text-sm">Anos de servicio</div>
 						</div>
 						<div>
-							<div class="text-5xl font-black text-accent">1000+</div>
-							<div class="mt-2 text-sm font-medium text-foreground/60">Personas beneficiadas</div>
+							<div class="text-3xl font-black text-accent 2xl:text-5xl">1000+</div>
+							<div class="mt-1 text-xs font-medium text-foreground/60 2xl:mt-2 2xl:text-sm">Personas beneficiadas</div>
 						</div>
 						<div>
-							<div class="text-5xl font-black text-secondary">46%</div>
-							<div class="mt-2 text-sm font-medium text-foreground/60">Jovenes buscan orientacion</div>
+							<div class="text-3xl font-black text-secondary 2xl:text-5xl">46%</div>
+							<div class="mt-1 text-xs font-medium text-foreground/60 2xl:mt-2 2xl:text-sm">Jovenes buscan orientacion</div>
 						</div>
 					</div>
 				</div>
 
 				<!-- Hero visual card -->
-				<div class="relative lg:h-150">
+				<div class="relative 2xl:h-150">
 					<div class="absolute inset-0 rounded-[3rem] bg-linear-to-br from-secondary/20 to-accent/20 blur-2xl"></div>
-					<div class="relative flex h-full flex-col gap-4 overflow-hidden rounded-[3rem] border border-border/40 bg-linear-to-br from-background to-surface/50 p-8 shadow-2xl backdrop-blur">
-						<div class="flex-1 rounded-2xl bg-linear-to-br from-foreground to-secondary p-8 text-white">
-							<div class="mb-4 text-xs font-bold uppercase tracking-widest text-accent">Nuestra visión</div>
-							<p class="text-3xl font-bold leading-tight">
+					<div class="relative flex h-full flex-col gap-4 overflow-hidden rounded-4xl border border-border/40 bg-linear-to-br from-background to-surface/50 p-6 shadow-2xl backdrop-blur 2xl:rounded-[3rem] 2xl:p-8">
+						<div class="flex-1 rounded-2xl bg-linear-to-br from-foreground to-secondary p-6 text-white 2xl:p-8">
+							<div class="mb-3 text-xs font-bold uppercase tracking-widest text-accent">Nuestra visión</div>
+							<p class="text-xl font-bold leading-tight 2xl:text-3xl">
 								Una sociedad mas inclusiva, accesible y capaz de desarrollar su maximo potencial
 							</p>
 						</div>
@@ -160,24 +160,24 @@ const programs = [
 		</section>
 
 		<!-- Quienes somos -->
-		<section id="nosotros" class="relative overflow-hidden py-28">
-			<div class="mx-auto w-full max-w-7xl px-6 lg:px-8">
-				<div class="grid items-center gap-12 lg:grid-cols-[0.5fr_1fr] lg:gap-16">
+		<section id="nosotros" class="relative overflow-hidden py-16 2xl:py-28">
+			<div class="mx-auto w-full max-w-7xl px-6 2xl:px-8">
+				<div class="grid items-start gap-10 2xl:items-center 2xl:grid-cols-[0.5fr_1fr] 2xl:gap-16">
 					<div class="space-y-6">
 						<div class="inline-block rounded-full border border-secondary/30 bg-secondary/5 px-4 py-2 text-sm font-semibold text-secondary">
 							— Sobre nosotros
 						</div>
-						<h2 class="font-['Space_Grotesk',sans-serif] text-5xl font-black leading-tight tracking-tight lg:text-6xl">
+						<h2 class="font-['Space_Grotesk',sans-serif] text-3xl font-black leading-tight tracking-tight 2xl:text-6xl">
 							Rehabilitacion basada en comunidad con enfoque <span class="text-secondary">humano</span>
 						</h2>
 					</div>
 
 					<div class="space-y-6">
-						<p class="text-xl leading-relaxed text-foreground/80">
+						<p class="text-base leading-relaxed text-foreground/80 2xl:text-xl">
 							Fundacion HRBC brinda asesoria en educacion inclusiva, habilitacion social, accesibilidad y diseno universal. Nuestro trabajo conecta <strong class="font-bold text-secondary">derechos humanos</strong>, <strong class="font-bold text-accent">actitud de servicio</strong> y acompanamiento cercano.
 						</p>
 						<div class="border-l-4 border-accent pl-6">
-							<p class="text-xl leading-relaxed text-foreground/80">
+							<p class="text-base leading-relaxed text-foreground/80 2xl:text-xl">
 								Disenamos procesos personalizados, presenciales y virtuales, para que cada persona o institucion alcance <strong class="font-bold text-secondary">su maximo potencial con autonomia</strong>.
 							</p>
 						</div>
@@ -187,23 +187,23 @@ const programs = [
 		</section>
 
 		<!-- Que hacemos -->
-		<section id="impacto" class="relative overflow-hidden bg-surface/30 py-28">
+		<section id="impacto" class="relative overflow-hidden bg-surface/30 py-16 2xl:py-28">
 			<div class="pointer-events-none absolute right-0 top-0 -z-10 size-125 rounded-full bg-linear-to-br from-accent/10 to-transparent blur-[80px]"></div>
 
-			<div class="mx-auto w-full max-w-7xl px-6 lg:px-8">
-				<div class="mb-16 max-w-3xl space-y-6">
+			<div class="mx-auto w-full max-w-7xl px-6 2xl:px-8">
+				<div class="mb-10 max-w-3xl space-y-4 2xl:mb-16 2xl:space-y-6">
 					<div class="inline-block rounded-full border border-accent/30 bg-accent/5 px-4 py-2 text-sm font-semibold text-accent">
 						— Nuestro impacto
 					</div>
-					<h2 class="font-['Space_Grotesk',sans-serif] text-5xl font-black leading-tight tracking-tight lg:text-7xl">
+					<h2 class="font-['Space_Grotesk',sans-serif] text-3xl font-black leading-tight tracking-tight 2xl:text-7xl">
 						De barreras a <span class="bg-linear-to-r from-secondary to-accent bg-clip-text text-transparent">oportunidades</span>
 					</h2>
-					<p class="text-xl leading-relaxed text-foreground/70">
+					<p class="text-base leading-relaxed text-foreground/70 2xl:text-xl">
 						Estas son las lineas de trabajo que orientan nuestros programas, alianzas e intervenciones.
 					</p>
 				</div>
 
-				<div class="grid gap-8 lg:grid-cols-3">
+				<div class="grid gap-6 2xl:grid-cols-3 2xl:gap-8">
 					{impactAreas.map((area, idx) => (
 						<article class="group rounded-3xl border border-border/40 bg-background p-8 shadow-lg transition hover:-translate-y-2 hover:border-secondary/50 hover:shadow-2xl">
 							<div class="mb-6 flex size-14 items-center justify-center rounded-2xl bg-linear-to-br from-secondary to-accent text-2xl font-black text-white">
@@ -218,23 +218,23 @@ const programs = [
 		</section>
 
 		<!-- Programas -->
-		<section id="programas" class="relative overflow-hidden py-28">
+		<section id="programas" class="relative overflow-hidden py-16 2xl:py-28">
 			<div class="pointer-events-none absolute left-0 top-0 -z-10 size-150 rounded-full bg-linear-to-br from-secondary/10 to-transparent blur-[100px]"></div>
 
-			<div class="mx-auto w-full max-w-7xl px-6 lg:px-8">
-				<div class="mb-16 space-y-6 text-center">
+			<div class="mx-auto w-full max-w-7xl px-6 2xl:px-8">
+				<div class="mb-10 space-y-4 text-center 2xl:mb-16 2xl:space-y-6">
 					<div class="inline-block rounded-full border border-secondary/30 bg-secondary/5 px-4 py-2 text-sm font-semibold text-secondary">
 						— Programas activos
 					</div>
-					<h2 class="font-['Space_Grotesk',sans-serif] text-5xl font-black leading-tight tracking-tight lg:text-7xl">
+					<h2 class="font-['Space_Grotesk',sans-serif] text-3xl font-black leading-tight tracking-tight 2xl:text-7xl">
 						Programas para <span class="text-secondary">elevar el potencial</span>
 					</h2>
-					<p class="mx-auto max-w-3xl text-xl leading-relaxed text-foreground/70">
+					<p class="mx-auto max-w-3xl text-base leading-relaxed text-foreground/70 2xl:text-xl">
 						Cada iniciativa responde a necesidades reales de inclusion, orientacion, rehabilitacion y participacion social.
 					</p>
 				</div>
 
-				<div class="grid gap-8 lg:grid-cols-3">
+				<div class="grid gap-6 2xl:grid-cols-3 2xl:gap-8">
 					{programs.map((program) => (
 						<article class="group rounded-3xl border border-border/40 bg-linear-to-br from-background to-surface/50 p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
 							<span class="mb-6 inline-block rounded-full bg-linear-to-r from-accent to-secondary px-4 py-1.5 text-xs font-black uppercase tracking-widest text-white">
@@ -249,17 +249,17 @@ const programs = [
 		</section>
 
 		<!-- Contacto -->
-		<section id="contacto" class="relative overflow-hidden bg-surface/30 py-28">
+		<section id="contacto" class="relative overflow-hidden bg-surface/30 py-16 2xl:py-28">
 			<div class="pointer-events-none absolute right-0 top-0 -z-10 size-125 rounded-full bg-linear-to-br from-accent/10 to-transparent blur-[80px]"></div>
 
-			<div class="mx-auto w-full max-w-6xl px-6 lg:px-8">
-				<div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+			<div class="mx-auto w-full max-w-6xl px-6 2xl:px-8">
+				<div class="grid gap-8 2xl:grid-cols-2 2xl:items-center">
 					<div class="space-y-8">
 						<div>
 							<div class="mb-6 inline-block rounded-full border border-secondary/30 bg-secondary/5 px-4 py-2 text-sm font-semibold text-secondary">
 								— Contacto
 							</div>
-							<h2 class="mb-6 font-['Space_Grotesk',sans-serif] text-5xl font-black leading-tight tracking-tight">
+							<h2 class="mb-4 font-['Space_Grotesk',sans-serif] text-3xl font-black leading-tight tracking-tight 2xl:mb-6 2xl:text-5xl">
 								Conversemos sobre <span class="text-secondary">participacion y alianzas</span>
 							</h2>
 						</div>
@@ -270,16 +270,16 @@ const programs = [
 						</div>
 					</div>
 
-					<div class="rounded-3xl bg-linear-to-br from-foreground to-secondary p-10 text-white shadow-2xl lg:min-h-105 lg:self-stretch">
+					<div class="rounded-3xl bg-linear-to-br from-foreground to-secondary p-8 text-white shadow-2xl 2xl:min-h-105 2xl:self-stretch 2xl:p-10">
 						<div class="flex h-full flex-col justify-between gap-10">
 							<div>
 								<div class="mb-4 text-xs font-bold uppercase tracking-widest text-accent">Contacto directo</div>
-								<h3 class="max-w-sm text-3xl font-bold leading-tight">
+								<h3 class="max-w-sm text-xl font-bold leading-tight 2xl:text-3xl">
 									Escribenos para conocer programas, servicios y formas de participar.
 								</h3>
 							</div>
 							<div class="space-y-4">
-								<p class="text-2xl font-semibold">fundacionhrbc@gmail.com</p>
+								<p class="text-lg font-semibold 2xl:text-2xl">fundacionhrbc@gmail.com</p>
 								<p class="max-w-md text-base leading-relaxed text-white/80">
 									Canal disponible para familias, aliados institucionales, consultas sobre accesibilidad y procesos de rehabilitacion basada en comunidad.
 								</p>
@@ -292,8 +292,8 @@ const programs = [
 
 		<!-- Footer -->
 		<footer class="border-t border-border/30 bg-background py-12">
-			<div class="mx-auto w-full max-w-7xl px-6 lg:px-8">
-				<div class="flex flex-col items-center justify-between gap-4 text-center text-sm text-foreground/60 lg:flex-row lg:text-left">
+			<div class="mx-auto w-full max-w-7xl px-6 2xl:px-8">
+				<div class="flex flex-col items-center justify-between gap-4 text-center text-sm text-foreground/60 2xl:flex-row 2xl:text-left">
 					<p>© 2026 Fundacion HRBC. Inclusion, rehabilitacion y desarrollo comunitario.</p>
 					<p>Trabajamos para que cada persona desarrolle su maximo potencial en comunidad.</p>
 				</div>
