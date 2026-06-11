@@ -1,0 +1,308 @@
+---
+import "../styles/global.css";
+import "lightbox2/dist/css/lightbox.min.css";
+
+type Subsection = {
+	title?: string;
+	subtitle?: string;
+	note?: string;
+	images: string[];
+};
+
+type Section = {
+	title: string;
+	subtitle?: string;
+	note?: string;
+	subsections: Subsection[];
+};
+
+const sections: Section[] = [
+	{
+		title: "Programa de Inclusión Educativa con Base Comunitaria",
+		subtitle: "2008 a 2015",
+		note: "Proyecto apoyado por Children Of The Andes, U.K. Fotografías tomadas por Ben Hiller.",
+		subsections: [
+			{
+				images: [
+					"i56c12bdbd98e5cab","ib362ba38dd87a469","iced92cd8724a9746","i66e54f564319c9b7",
+					"i83a5f934fa2867a1","i71d6e6b48fd20d9f","id09aefef249d901b","i3820019c27009506",
+					"i0e66e35395f3bba4","id18480d2afe7ee70","i28211262cd31e216","i82bc03d55eaa7d42",
+					"ibc962f7d85d2e188","i3cec72e4c9c73998","i799c9c1ebcf5e7a6","i9a2b29e7495c25ee",
+					"ia64f4f912d0fe1b5","i567fc5fc49910671","i838947ad6c5ded66","ib8ec15f51a4e0977",
+					"i9626ec84c61fee7a","i275423d1d6df5bf5","i7a7ffc01c46fb9a1","iaf650467785f1eca",
+					"i8dc286e96cfd9a02","i80e57cc70a056980","i33b3d9507e51fcb3","i36f43f667b37f04d",
+					"i01b12a1f68c531d8","id2e7daa678df4b9e","i9b5dbfb79c471abf","i0821dd484d32fad3",
+					"ieebff807d40cc6ae",
+				],
+			},
+		],
+	},
+	{
+		title: "Programa de Asesorías Externas",
+		subtitle: "",
+		subsections: [
+			{
+				title: "Proyecto de movilización social — Huila, Neiva",
+				subtitle: "2012",
+				images: [
+					"ib77792dc89fe3d10","i7554e13b7952fb17","i794aab53d6ff58e3","iadf1e053680303bc","ica0df742db3fd99f",
+				],
+			},
+			{
+				title: "Proyecto Movilización social — Danza Integrada, Amazonas, Colombia",
+				subtitle: "2013 – 2014",
+				note: "Fundación Àzoe Danza y Fundación HRBC. Apoyados por Ministerio de Cultura, Ministerio de Protección Social y Secretaría de Salud del Amazonas.",
+				images: [
+					"i6c2150aa83e927b6","i57317ef198050413","iec6d329323d3c131","i27d69e88674819ae",
+					"i0607cf81a3b7303f","i5fba8987f094531b","i60a770cd5f73559b","ia50cd59697cb5385",
+					"i80985f4507bccd3f","ia650b36fa6610eee","i1140d3b75b5fa6b4","i3620b5a64f1ac32b",
+					"i5e463415c620cac1","ie99c557707acb961","i02a7b08720a73913","i1d61204574533bc0",
+					"id7ddf71b63871092","i72ec2e7f0f86a75c","iec55af9227001d53","i8623858a96ff78b0",
+					"ic0d93d9076aa63a9","ic54999f4578c9bf3","i5562a2b5b487d955","i86bba006f01b5e42",
+					"i6ef6938c95f4e262","i1f6cf3ca8950f612","i1019cbcc03b03b04","if8f7afc86ac9190b","i0da922c62bf769fd",
+				],
+			},
+			{
+				title: "Talleres de capacitación a ONG's y Comunidades",
+				subtitle: "Ong's Cali y Agentes Culturales de la Red de Bibliotecas Públicas de Cali",
+				images: [
+					"i802810844f4f572c","ic7e1c4d0426b9dfc","i77d509ba4ba925ac",
+					"i8ad3ed2e3dd40f77","ia18b5cf038682a63","i22e2cb31fd1d97b9",
+				],
+			},
+			{
+				title: "Taller de RBC en los 13 Municipios de Putumayo",
+				images: [
+					"if52029d161b305ee","i0dd662a13b48cefa","id8bf7b2d5fa75aa7","iffbced48b5ff48c2",
+					"i86b8e9fbe7e1307a","i13231a02abd27d3b","i80f485f06574a742","i1d1e3b341029a5d3",
+					"i524960f076cf93dc","ifee86e99e2fe6992","if148e4ffb7ed2db9","i9dd7b5f81823184b",
+					"ifb87f3f3000e45ce","i9a22005992f3c8f1","i7329b2d1d8248933","idc29d4a888b1590d",
+					"i655cc590c3bb8340","i9e1e1ccc20ac8cd5","i24c48f5ca3cb8681","ia5c51c581ce5880a",
+					"ic81938bfa4c05acf","i9d2981f8f2654a1d","i608230aff7297524",
+				],
+			},
+			{
+				title: "Ong's y Universidades en Santander del Norte",
+				images: [
+					"id2d6616910c7b1db","i2bde735dc0b34fd4","i270f59e9b4246190","i4c4aafedaa525929",
+					"i03d48de11dfa9be3","ib5e4320cc5936cab","i26b1d709df40b4bb","i92217f0008adf0e7",
+					"ic23ea98f506b46b0","idb9457d7630e6b97",
+				],
+			},
+			{
+				title: "INCI — Bogotá",
+				subtitle: "En el marco del convenio HRBC-INCI 2010",
+				images: [
+					"i6d1abd1071aeec07","icf105e78e6de59c5","iff958604bf492dab",
+					"i6d2b0670f1ba22cb","i80c9facce9d66481","ic8dffa5d3cdf879d",
+				],
+			},
+			{
+				title: "Talleres y actividades con padres de familia en la comunidad",
+				images: [
+					"iae093ae84e66d56b","i9678eb7112f94738","i57d8eea3adc9804a","i17dd26a85664c2de",
+					"iaf618c6001f3a752","ib26bf193d3e7947b","iea274b2be95e3da9","i66159ffc0bf425f1",
+					"i67e932aa30cc42c1","i0058998e521934c3","icec91b3cdc749b09","i1f28c4fc90b70c7f",
+					"ie6023dd4d169d1e7","i604fabf3cfc6f2c4","i3200c24915518768","i7f441b759cfe1e65",
+					"ia8ad66158714aef3","i48cf0aad37f401d5","i9c54d59f567079b0","id6fba825660f83b7",
+					"i71a36d9fafb72773","iab86d3aca91db8cb","i460104313552276a","i311e0def02070891",
+					"id752565ac94e4b32","i6a946cd2397a7713","ide7687ea1fdba535","id4613869120d3355",
+					"i3965ca1e067e8caf","i53a2eeaf512a3c3d",
+				],
+			},
+			{
+				title: "Laboratorios de Investigación y Creación",
+				subtitle: "2009–2011 · Coordinadores logísticos Fundación HRBC",
+				images: [
+					"ifa6f7bcda33268ed","i3d2fefa2be06b7fd","ie136d33ad5fab856","i7cd5fb5f3ed3e66a",
+					"i0ce6e51853deb694","i46802e4aaedd7249","i1902dbf7762a8b7e","i5ee5efd211f88ddb",
+					"ic4c2367ebdc614e4","i6df6fac3b2a7b947","i392b8765b7f7a6b5","i464961f7dc78b015",
+					"i6675e19ab9551de7","ib14f94bc0d61d446","idf6b2ce054d25209","i617250760767e911",
+					"i87888f16f6a00f45","if6c392cd1c276a9a","i765d592d3eccb48e","i295c942cc0028453",
+					"i087e98a24675126c","id2c8a42a898ce829",
+				],
+			},
+			{
+				title: "Redes Sociales en Inclusión y Discapacidad",
+				subtitle: "Red Pensar desde la Diferencia para Sumarnos a lo Colectivo",
+				note: "Red de ONG's que trabajan los derechos humanos de las personas con discapacidad y sus familias, con el arte como facilitador.",
+				images: [
+					"i06deba2be465eca2","i86fa466109c5aaa2","i2317398b9f56458f","i962f93d8d64bde73",
+					"ic65649eec621c63c","i6bd1bb3efcf5c5c1","i4c9da528c1e4aebe","if100d73cb9532497",
+					"ic0fec13a01fd54ea","ic54072d7fc357328","ic9e02e3039c602d0","i1aa29309d5750188",
+					"i252305ef52e25229","i05aab369944d2dcb","i63c497f720cac535","i4a8de0da0a950a37",
+					"icc1a69a72471b218","iff3a865bfc5d789b","ifb4c362af5083aef","ib63a9f379e9d2ee0",
+					"ide530dd5854b7c46","i820270bea7e052a7","i98440e423fa7d4c3","i59f6eb08fff3250d",
+					"icccc14f6c59314ff","i873ede9b9991990c",
+				],
+			},
+			{
+				title: "Red Santandereana por la Inclusión de las Personas con Discapacidad",
+				images: ["i03ea8fb3ca1c2239","i271855b35a61fbea","i408b065810ad5831"],
+			},
+			{
+				title: "Sub Comisión de Inclusión Educativa — Foro Internacional de Inclusión Educativa Cali",
+				images: ["ie98a70aea342a913","i561c4e66e4f3298f","i2d4a4597b2f36399"],
+			},
+			{
+				title: "REDDIS Cali",
+				subtitle: "Red de formación en normas y derechos de las personas en situación de discapacidad y sus familias",
+				images: ["ic0d76d2ea63a617d","i56d30cb1326be90b","i547bac3bd87e74e8","i57efc2e7ac94e79f","i54b07c055c892e47"],
+			},
+			{
+				title: "Red de Redes de RBC — Latinoamérica y el Caribe",
+				images: ["i135ed0f2d86e34a0","i9dd7794f2ee80946","ibcdfc12f39374592","i882c0b7dc6be2ebb","i1f2d013b83dc34af"],
+			},
+		],
+	},
+	{
+		title: "Voluntariado",
+		subtitle: "",
+		subsections: [
+			{
+				title: "Plataforma de Voluntarios de Organizaciones",
+				images: [
+					"ide3080b0ec0c2332","i009b2dd95e79875b","i8160e466ae4332ca","i52881b902bf169c6",
+					"i9a88b1cc771d1880","i72435ec78120d47b","ibf3b8461b7f9f73f","i73d4db0618a19bce",
+					"i1099b5709a4d0427","i3dbb7fdf00184daf","i8bf9ccd3f0a8e202","i3fe50809a9c6a0cc",
+					"ibfb34bce74d3cb99","i7e566fb0a5c87114","ifb891cdab30ba51a","i452bdc16830832c4",
+					"icc74f88270fe2216","i15016ababd7d5c4f","i426fe21e68accbbf","i4a37e737025daa23","ice67ddf7cad4ac15",
+				],
+			},
+			{
+				title: "Compartiendo Contigo — Carnaval de los Colores 2010",
+				subtitle: "Secretaría de Cultura Cali · Eventos y actividades que nos donan",
+				images: ["i5cb25c4d94d68213","if4839dba4f8fb0af","ic03cfc906128144e"],
+			},
+		],
+	},
+];
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Galería fotográfica de Fundación HRBC — memoria visual de nuestros programas, talleres y redes de trabajo comunitario." />
+		<title>Galería de Fotos — Fundación HRBC</title>
+	</head>
+	<body class="bg-background text-foreground antialiased">
+
+		<!-- Header -->
+		<header class="fixed left-0 right-0 top-0 z-50 backdrop-blur-xl">
+			<nav class="mx-auto flex w-full max-w-7xl items-center justify-between border-b border-border/20 bg-background/80 px-6 py-4 2xl:px-8">
+				<a href="/" class="group flex items-center gap-3">
+					<img src="/icon.jpg" alt="HRBC Logo" class="h-12 w-auto rounded-lg transition-transform duration-300 group-hover:scale-105" />
+					<span class="font-bold uppercase tracking-[0.15em]">Fundación HRBC</span>
+				</a>
+				<div class="hidden items-center gap-2 2xl:flex">
+					<a class="px-4 py-2 text-sm font-medium transition hover:text-secondary" href="/#nosotros">Nosotros</a>
+					<a class="px-4 py-2 text-sm font-medium transition hover:text-secondary" href="/#impacto">Impacto</a>
+					<a class="px-4 py-2 text-sm font-medium transition hover:text-secondary" href="/#programas">Programas</a>
+					<a class="px-4 py-2 text-sm font-semibold text-secondary" href="/gallery">Galería</a>
+					<a class="ml-3 rounded-xl bg-secondary px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-accent" href="/#contacto">Contactar</a>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Hero -->
+		<section class="relative overflow-hidden pt-20">
+			<div class="pointer-events-none absolute inset-0 -z-10 bg-linear-to-br from-secondary/10 via-background to-accent/5"></div>
+			<div class="mx-auto w-full max-w-7xl px-6 py-14 2xl:px-8 2xl:py-24">
+				<div class="max-w-3xl space-y-4">
+					<div class="inline-block rounded-full border border-secondary/30 bg-secondary/5 px-4 py-2 text-sm font-semibold text-secondary">
+						— Memoria visual
+					</div>
+					<h1 class="font-['Space_Grotesk',sans-serif] text-4xl font-black leading-tight tracking-tight 2xl:text-7xl">
+						Galería de <span class="text-secondary">Fotos</span>
+					</h1>
+					<p class="text-base leading-relaxed text-foreground/70 2xl:text-xl">
+						Registro fotográfico de nuestros programas, talleres, redes y actividades comunitarias a lo largo de los años.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Gallery Sections -->
+		<main class="mx-auto w-full max-w-7xl px-6 pb-24 2xl:px-8">
+			{sections.map((section, si) => (
+				<section class="mb-20 2xl:mb-32">
+					<!-- Section header -->
+					<div class={`mb-10 border-l-4 pl-6 2xl:mb-16 ${si === 0 ? "border-secondary" : si === 1 ? "border-accent" : "border-primary"}`}>
+						<h2 class="font-['Space_Grotesk',sans-serif] text-2xl font-black leading-tight tracking-tight 2xl:text-5xl">
+							{section.title}
+						</h2>
+						{section.subtitle && (
+							<p class="mt-1 text-sm font-semibold text-secondary 2xl:text-base">{section.subtitle}</p>
+						)}
+						{section.note && (
+							<p class="mt-3 max-w-2xl text-sm leading-relaxed text-foreground/60 2xl:text-base">{section.note}</p>
+						)}
+					</div>
+
+					{section.subsections.map((sub) => (
+						<div class="mb-14 2xl:mb-20">
+							{sub.title && (
+								<div class="mb-6 2xl:mb-8">
+									<h3 class="text-lg font-bold text-foreground 2xl:text-2xl">{sub.title}</h3>
+									{sub.subtitle && (
+										<p class="mt-1 text-sm text-foreground/60 2xl:text-base">{sub.subtitle}</p>
+									)}
+									{sub.note && (
+										<p class="mt-2 max-w-2xl text-xs leading-relaxed text-foreground/50 2xl:text-sm">{sub.note}</p>
+									)}
+								</div>
+							)}
+
+							<!-- Photo grid -->
+							<div class="columns-2 gap-3 sm:columns-3 md:columns-4 2xl:columns-5 2xl:gap-4">
+								{sub.images.map((id) => (
+									<a
+										href={`/gallery/${id}.jpg`}
+										data-lightbox={`section-${si}-sub-${section.subsections.indexOf(sub)}`}
+										class="group mb-3 block overflow-hidden rounded-xl 2xl:mb-4 2xl:rounded-2xl"
+									>
+										<img
+											src={`/gallery/${id}.jpg`}
+											alt=""
+											loading="lazy"
+											decoding="async"
+											class="w-full transition-transform duration-500 group-hover:scale-105"
+										/>
+									</a>
+								))}
+							</div>
+						</div>
+					))}
+				</section>
+			))}
+		</main>
+
+		<!-- Footer -->
+		<footer class="border-t border-border/30 bg-surface/40 py-10">
+			<div class="mx-auto flex w-full max-w-7xl flex-col items-center gap-4 px-6 text-center 2xl:px-8">
+				<a href="/" class="flex items-center gap-3">
+					<img src="/icon.jpg" alt="HRBC" class="h-10 w-auto rounded-lg" />
+					<span class="font-bold uppercase tracking-widest">Fundación HRBC</span>
+				</a>
+				<p class="max-w-md text-sm text-foreground/50">
+					Galería fotográfica · Registro de programas e iniciativas 2008–2015
+				</p>
+			</div>
+		</footer>
+
+		<script>
+			import lightbox from "lightbox2";
+			lightbox.option({
+				wrapAround: true,
+				disableScrolling: true,
+				resizeDuration: 200,
+				fadeDuration: 300,
+				imageFadeDuration: 300,
+				albumLabel: "Foto %1 de %2",
+			});
+		</script>
+	</body>
+</html>
