@@ -1,0 +1,303 @@
+---
+import "../styles/global.css";
+import Icon from "../components/Icon.astro";
+import UsersIcon from "heroicons/24/outline/users.svg?raw";
+import MapPinIcon from "heroicons/24/outline/map-pin.svg?raw";
+import CheckCircleIcon from "heroicons/24/outline/check-circle.svg?raw";
+import ArrowRightIcon from "heroicons/24/outline/arrow-right.svg?raw";
+
+const impactAreas = [
+	{
+		title: "Atencion a poblaciones vulnerables",
+		description:
+			"Ofrecemos apoyo especializado a comunidades en situaciones dificiles, mitigando barreras y acercando recursos para su recuperacion y empoderamiento.",
+	},
+	{
+		title: "Habilitacion y rehabilitacion integral",
+		description:
+			"Brindamos procesos de inclusion, habilitacion y rehabilitacion basados en comunidad para fortalecer autonomia, participacion y calidad de vida.",
+	},
+	{
+		title: "Orientacion y participacion social",
+		description:
+			"Acompanamos proyectos de vida, formacion para el trabajo y espacios de liderazgo, resiliencia y vinculacion activa con la comunidad.",
+	},
+];
+
+const programs = [
+	{
+		name: "Programa de Aprendizaje Vital",
+		status: "Activo",
+		description:
+			"Fortalecemos habilidades de autogestion, conciencia social, resiliencia y liderazgo para que cada persona dirija su vida de forma significativa.",
+	},
+	{
+		name: "Sembrando Arte, Cosechando Esperanzas",
+		status: "En desarrollo",
+		description:
+			"Talleres de ocupacion del tiempo libre y expresion creativa para jovenes, enfocados en inclusion, pertenencia y desarrollo comunitario.",
+	},
+	{
+		name: "Habilitacion y Rehabilitacion Basada en Comunidad",
+		status: "En marcha",
+		description:
+			"Asesoramos a personas, familias e instituciones en educacion inclusiva, accesibilidad, diseno universal y participacion con enfoque de derechos.",
+	},
+];
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Fundación HRBC</title>
+		<meta
+			name="description"
+			content="Fundacion HRBC impulsa procesos de inclusion, rehabilitacion basada en comunidad y desarrollo personal mediante programas con enfoque humano."
+		/>
+	</head>
+	<body class="bg-background text-foreground antialiased">
+		<!-- Header -->
+		<header class="fixed left-0 right-0 top-0 z-50 backdrop-blur-xl">
+			<nav class="mx-auto flex w-full max-w-7xl items-center justify-between border-b border-border/20 bg-background/80 px-6 py-4 lg:px-8">
+				<a href="#hero" class="group flex items-center gap-3">
+					<img src="/icon.jpg" alt="HRBC Logo" class="h-12 w-auto rounded-lg transition-transform duration-300 group-hover:scale-105" />
+					<span class="font-bold uppercase tracking-[0.15em]">Fundación HRBC</span>
+				</a>
+				<div class="hidden items-center gap-2 md:flex">
+					<a class="px-4 py-2 text-sm font-medium transition hover:text-secondary" href="#nosotros">Nosotros</a>
+					<a class="px-4 py-2 text-sm font-medium transition hover:text-secondary" href="#impacto">Impacto</a>
+					<a class="px-4 py-2 text-sm font-medium transition hover:text-secondary" href="#programas">Programas</a>
+					<a class="ml-3 rounded-xl bg-secondary px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-accent" href="#contacto">Contactar</a>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Hero -->
+		<section id="hero" class="relative min-h-screen overflow-hidden pt-20">
+			<!-- Background gradient -->
+			<div class="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-secondary/10 via-background to-accent/5"></div>
+			<div class="pointer-events-none absolute right-0 top-40 -z-10 size-[600px] rounded-full bg-gradient-to-br from-accent/20 to-transparent blur-[100px]"></div>
+
+			<div class="mx-auto grid min-h-screen w-full max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.2fr_0.8fr] lg:gap-16 lg:px-8">
+				<div class="flex flex-col gap-10">
+
+					<div class="space-y-6">
+						<h1 class="font-['Space_Grotesk',sans-serif] text-6xl font-black leading-[1.05] tracking-tight lg:text-8xl">
+							Potenciamos capacidades para una <span class="text-secondary">vida con autonomia</span>
+						</h1>
+						<p class="max-w-2xl text-xl leading-relaxed text-foreground/70 lg:text-2xl">
+							Impulsamos el desarrollo personal y comunitario con programas de inclusion, orientacion y rehabilitacion basada en comunidad.
+						</p>
+					</div>
+
+					<div class="flex flex-wrap gap-4">
+						<a href="#programas" class="group inline-flex items-center gap-2 rounded-full bg-secondary px-8 py-4 font-bold text-white shadow-xl transition hover:scale-105 hover:shadow-2xl">
+							Ver programas
+						<Icon icon={ArrowRightIcon} class="size-5 transition-transform group-hover:translate-x-1" />
+						</a>
+						<a href="#contacto" class="inline-flex items-center gap-2 rounded-full border-2 border-foreground/10 px-8 py-4 font-bold transition hover:border-secondary hover:bg-secondary/5 hover:text-secondary">
+							Colaborar
+						</a>
+					</div>
+
+					<!-- Stats -->
+					<div class="grid grid-cols-3 gap-6 border-t border-border/30 pt-10">
+						<div>
+							<div class="text-5xl font-black text-secondary">18</div>
+							<div class="mt-2 text-sm font-medium text-foreground/60">Anos de servicio</div>
+						</div>
+						<div>
+							<div class="text-5xl font-black text-accent">1000+</div>
+							<div class="mt-2 text-sm font-medium text-foreground/60">Personas beneficiadas</div>
+						</div>
+						<div>
+							<div class="text-5xl font-black text-secondary">46%</div>
+							<div class="mt-2 text-sm font-medium text-foreground/60">Jovenes buscan orientacion</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Hero visual card -->
+				<div class="relative lg:h-[600px]">
+					<div class="absolute inset-0 rounded-[3rem] bg-gradient-to-br from-secondary/20 to-accent/20 blur-2xl"></div>
+					<div class="relative flex h-full flex-col gap-4 overflow-hidden rounded-[3rem] border border-border/40 bg-gradient-to-br from-background to-surface/50 p-8 shadow-2xl backdrop-blur">
+						<div class="flex-1 rounded-2xl bg-gradient-to-br from-foreground to-secondary p-8 text-white">
+							<div class="mb-4 text-xs font-bold uppercase tracking-widest text-accent">Nuestra visión</div>
+							<p class="text-3xl font-bold leading-tight">
+								Una sociedad mas inclusiva, accesible y capaz de desarrollar su maximo potencial
+							</p>
+						</div>
+
+						<div class="grid grid-cols-2 gap-4">
+							<div class="rounded-2xl border border-border/40 bg-background/80 p-6">
+								<div class="mb-3 flex size-10 items-center justify-center rounded-xl bg-secondary/20 text-secondary">
+									<Icon icon={UsersIcon} class="size-6" />
+								</div>
+								<div class="font-bold">Inclusión</div>
+								<div class="mt-1 text-sm text-foreground/60">Procesos centrados en la persona</div>
+							</div>
+							<div class="rounded-2xl bg-secondary/10 p-6">
+								<div class="mb-3 flex size-10 items-center justify-center rounded-xl bg-secondary/30 text-secondary">
+									<Icon icon={MapPinIcon} class="size-6" />
+								</div>
+								<div class="font-bold">Comunidad</div>
+								<div class="mt-1 text-sm text-foreground/60">Trabajo territorial y redes locales</div>
+							</div>
+							<div class="col-span-2 rounded-2xl bg-accent/10 p-6">
+								<div class="mb-3 flex size-10 items-center justify-center rounded-xl bg-accent/30 text-accent">
+									<Icon icon={CheckCircleIcon} class="size-6" />
+								</div>
+								<div class="font-bold">Desarrollo integral</div>
+								<div class="mt-1 text-sm text-foreground/60">Educacion, accesibilidad y proyecto de vida</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Quienes somos -->
+		<section id="nosotros" class="relative overflow-hidden py-28">
+			<div class="mx-auto w-full max-w-7xl px-6 lg:px-8">
+				<div class="grid items-center gap-12 lg:grid-cols-[0.5fr_1fr] lg:gap-16">
+					<div class="space-y-6">
+						<div class="inline-block rounded-full border border-secondary/30 bg-secondary/5 px-4 py-2 text-sm font-semibold text-secondary">
+							— Sobre nosotros
+						</div>
+						<h2 class="font-['Space_Grotesk',sans-serif] text-5xl font-black leading-tight tracking-tight lg:text-6xl">
+							Rehabilitacion basada en comunidad con enfoque <span class="text-secondary">humano</span>
+						</h2>
+					</div>
+
+					<div class="space-y-6">
+						<p class="text-xl leading-relaxed text-foreground/80">
+							Fundacion HRBC brinda asesoria en educacion inclusiva, habilitacion social, accesibilidad y diseno universal. Nuestro trabajo conecta <strong class="font-bold text-secondary">derechos humanos</strong>, <strong class="font-bold text-accent">actitud de servicio</strong> y acompanamiento cercano.
+						</p>
+						<div class="border-l-4 border-accent pl-6">
+							<p class="text-xl leading-relaxed text-foreground/80">
+								Disenamos procesos personalizados, presenciales y virtuales, para que cada persona o institucion alcance <strong class="font-bold text-secondary">su maximo potencial con autonomia</strong>.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Que hacemos -->
+		<section id="impacto" class="relative overflow-hidden bg-surface/30 py-28">
+			<div class="pointer-events-none absolute right-0 top-0 -z-10 size-[500px] rounded-full bg-gradient-to-br from-accent/10 to-transparent blur-[80px]"></div>
+
+			<div class="mx-auto w-full max-w-7xl px-6 lg:px-8">
+				<div class="mb-16 max-w-3xl space-y-6">
+					<div class="inline-block rounded-full border border-accent/30 bg-accent/5 px-4 py-2 text-sm font-semibold text-accent">
+						— Nuestro impacto
+					</div>
+					<h2 class="font-['Space_Grotesk',sans-serif] text-5xl font-black leading-tight tracking-tight lg:text-7xl">
+						De barreras a <span class="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">oportunidades</span>
+					</h2>
+					<p class="text-xl leading-relaxed text-foreground/70">
+						Estas son las lineas de trabajo que orientan nuestros programas, alianzas e intervenciones.
+					</p>
+				</div>
+
+				<div class="grid gap-8 lg:grid-cols-3">
+					{impactAreas.map((area, idx) => (
+						<article class="group rounded-3xl border border-border/40 bg-background p-8 shadow-lg transition hover:-translate-y-2 hover:border-secondary/50 hover:shadow-2xl">
+							<div class="mb-6 flex size-14 items-center justify-center rounded-2xl bg-gradient-to-br from-secondary to-accent text-2xl font-black text-white">
+								{idx + 1}
+							</div>
+							<h3 class="mb-4 text-2xl font-bold">{area.title}</h3>
+							<p class="leading-relaxed text-foreground/70">{area.description}</p>
+						</article>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Programas -->
+		<section id="programas" class="relative overflow-hidden py-28">
+			<div class="pointer-events-none absolute left-0 top-0 -z-10 size-[600px] rounded-full bg-gradient-to-br from-secondary/10 to-transparent blur-[100px]"></div>
+
+			<div class="mx-auto w-full max-w-7xl px-6 lg:px-8">
+				<div class="mb-16 space-y-6 text-center">
+					<div class="inline-block rounded-full border border-secondary/30 bg-secondary/5 px-4 py-2 text-sm font-semibold text-secondary">
+						— Programas activos
+					</div>
+					<h2 class="font-['Space_Grotesk',sans-serif] text-5xl font-black leading-tight tracking-tight lg:text-7xl">
+						Programas para <span class="text-secondary">elevar el potencial</span>
+					</h2>
+					<p class="mx-auto max-w-3xl text-xl leading-relaxed text-foreground/70">
+						Cada iniciativa responde a necesidades reales de inclusion, orientacion, rehabilitacion y participacion social.
+					</p>
+				</div>
+
+				<div class="grid gap-8 lg:grid-cols-3">
+					{programs.map((program) => (
+						<article class="group rounded-3xl border border-border/40 bg-gradient-to-br from-background to-surface/50 p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl">
+							<span class="mb-6 inline-block rounded-full bg-gradient-to-r from-accent to-secondary px-4 py-1.5 text-xs font-black uppercase tracking-widest text-white">
+								{program.status}
+							</span>
+							<h3 class="mb-4 text-2xl font-bold leading-tight">{program.name}</h3>
+							<p class="leading-relaxed text-foreground/70">{program.description}</p>
+						</article>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Contacto -->
+		<section id="contacto" class="relative overflow-hidden bg-surface/30 py-28">
+			<div class="pointer-events-none absolute right-0 top-0 -z-10 size-[500px] rounded-full bg-gradient-to-br from-accent/10 to-transparent blur-[80px]"></div>
+
+			<div class="mx-auto w-full max-w-6xl px-6 lg:px-8">
+				<div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+					<div class="space-y-8">
+						<div>
+							<div class="mb-6 inline-block rounded-full border border-secondary/30 bg-secondary/5 px-4 py-2 text-sm font-semibold text-secondary">
+								— Contacto
+							</div>
+							<h2 class="mb-6 font-['Space_Grotesk',sans-serif] text-5xl font-black leading-tight tracking-tight">
+								Conversemos sobre <span class="text-secondary">participacion y alianzas</span>
+							</h2>
+						</div>
+						<div class="space-y-4 text-foreground/70">
+							<p class="text-base leading-relaxed">
+								Si necesitas informacion sobre programas, participacion o servicios de asesoria, escribenos y coordinamos la mejor ruta de atencion.
+							</p>
+						</div>
+					</div>
+
+					<div class="rounded-3xl bg-gradient-to-br from-foreground to-secondary p-10 text-white shadow-2xl lg:min-h-[420px] lg:self-stretch">
+						<div class="flex h-full flex-col justify-between gap-10">
+							<div>
+								<div class="mb-4 text-xs font-bold uppercase tracking-widest text-accent">Contacto directo</div>
+								<h3 class="max-w-sm text-3xl font-bold leading-tight">
+									Escribenos para conocer programas, servicios y formas de participar.
+								</h3>
+							</div>
+							<div class="space-y-4">
+								<p class="text-2xl font-semibold">fundacionhrbc@gmail.com</p>
+								<p class="max-w-md text-base leading-relaxed text-white/80">
+									Canal disponible para familias, aliados institucionales, consultas sobre accesibilidad y procesos de rehabilitacion basada en comunidad.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="border-t border-border/30 bg-background py-12">
+			<div class="mx-auto w-full max-w-7xl px-6 lg:px-8">
+				<div class="flex flex-col items-center justify-between gap-4 text-center text-sm text-foreground/60 lg:flex-row lg:text-left">
+					<p>© 2026 Fundacion HRBC. Inclusion, rehabilitacion y desarrollo comunitario.</p>
+					<p>Trabajamos para que cada persona desarrolle su maximo potencial en comunidad.</p>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

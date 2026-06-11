@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+	--color-mist-50: #f5faf7;
+	--color-mist-400: #b9d4c7;
+	--color-olive-950: #1d281f;
+	--color-sky-600: #0284c7;
+	--color-lime-500: #84cc16;
+	--color-cyan-100: #cffafe;
+	--color-cyan-700: #0f766e;
+
+	--color-primary: var(--color-mist-400);
+	--color-primary-foreground: var(--color-olive-950);
+	--color-secondary: var(--color-sky-600);
+	--color-secondary-foreground: var(--color-mist-50);
+	--color-accent: var(--color-lime-500);
+	--color-accent-foreground: var(--color-olive-950);
+	--color-background: var(--color-mist-50);
+	--color-foreground: var(--color-olive-950);
+	--color-surface: var(--color-cyan-100);
+	--color-surface-foreground: var(--color-olive-950);
+	--color-muted: var(--color-cyan-100);
+	--color-muted-foreground: var(--color-cyan-700);
+	--color-border: var(--color-mist-400);
+	--color-ring: var(--color-sky-600);
+}
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+
+	body {
+		font-family: "Instrument Sans", sans-serif;
+		background-color: var(--color-background);
+		color: var(--color-foreground);
+	}
+
+	::selection {
+		background: color-mix(in srgb, var(--color-secondary) 25%, white);
+		color: var(--color-foreground);
+	}
+
+	input,
+	textarea,
+	button {
+		font: inherit;
+	}
+
+	textarea {
+		resize: vertical;
+	}
+}
